@@ -1,0 +1,15 @@
+public class Uri1036 {
+
+
+    public static void main(String[] args) {
+        float A=(float) 10.0, B=(float) 20.1, C=(float) 5.1;
+
+        double resultado = (Math.pow (B,2)-(4*A*C));
+        double raiz  = Math.sqrt (resultado);
+
+        System.out.println(resultado);
+        System.out.printf("%.5f %n", raiz);
+
+    }
+
+}
