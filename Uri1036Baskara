@@ -1,0 +1,33 @@
+package uri1036;
+
+import java.util.Scanner;
+
+public class Uri1036 {
+
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner (System.in);
+
+        double A, B, C;
+        A = teclado.nextDouble();
+        B = teclado.nextDouble();
+        C = teclado.nextDouble ();
+
+        double resultado = (Math.pow (B,2)-(4*A*C));
+        double delta  = Math.sqrt (resultado);
+        double raiz1 = (((-B)+delta)/2*A);
+        double raiz2 = (((-B)-delta)/2*A);
+
+        if (A==0)
+        {
+        System.out.println("Impossível calcular");
+        }else if(delta>0){
+            System.out.printf("Raiz = %.5f\n", raiz1);
+                System.out.printf("Raiz = %.5f\n", raiz2);
+        }
+        else {
+            System.out.println("Impossível calcular");
+        }
+    }
+
+}
